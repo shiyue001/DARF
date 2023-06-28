@@ -5,7 +5,9 @@ env: ibr1
 
 train:
 python train.py --config configs/pretrain.txt 
+
 python train.py --config configs/pretrain.txt --use_ffc --num_source_views --expname
+
 python train.py --config configs/pretrain.txt --use_attn --num_source_views --expname 
 
 test:
