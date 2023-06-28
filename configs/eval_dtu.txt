@@ -1,0 +1,21 @@
+### INPUT
+expname = train_dtu5_norandom_5.1
+rootdir = /cluster/work/cvl/yueshi/  # REPLACE THIS with YOUR PATH.
+ckpt_path = /cluster/work/cvl/yueshi/code/IBRNet/out/dtu5_usedepth[300,400]_sample=64_importance=64_0.1_Nrand=2000_4.23/model_250000.pth  # REPLACE THIS with YOUR PATH.
+distributed = False
+testskip = 10
+
+### eval options
+eval_dataset = dtu
+### eval_scenes = [scan3, scan10, scan13, scan18, scan30, scan47, scan63, scan99]
+### eval_scenes = [scan10, scan13, scan18, scan30, scan47, scan63, scan77, scan99, scan103]
+eval_scenes = [scan10, scan13, scan30, scan47, scan63]
+
+### TESTING
+chunk_size = 2000
+
+### RENDERING
+N_importance = 64
+N_samples = 64
+inv_uniform = True
+white_bkgd = True

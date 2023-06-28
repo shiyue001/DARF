@@ -1,0 +1,38 @@
+# expname = dtu5_usedepth[300,400]_sample=64_64Nrand=2000_5.16
+# outdir = /cluster/project/cvl/yueshi/code/IBR_vsr/
+outdir = ./results/
+rootdir = /cluster/work/cvl/yueshi/  # REPLACE THIS with YOUR PATH.
+render_stride = 2
+distributed = False
+
+num_source_views = 5
+
+## dataset
+train_dataset = dtu
+train_scenes = [scan1,scan2,scan4,scan5,scan6,scan9,scan12,scan15,scan16,scan17,scan19,scan21,scan22,scan23,scan24,scan25,scan28,scan29,scan31,scan32,scan33,scan34,scan35,scan36,scan37,scan38,scan39,scan40,scan41,scan42,scan43,scan44,scan45,scan46,scan48,scan49,scan50,scan51,scan55,scan59,scan60,scan61,scan62,scan64,scan65,scan69,scan74,scan75,scan76,scan83,scan84,scan93,scan94,scan95,scan96,scan97,scan98,scan100,scan102,scan105,scan106,scan110,scan114,scan118,scan122,scan126,scan127,scan128]
+dataset_weights = [1]
+eval_dataset = dtu
+### eval_scenes = [scan3, scan10, scan13, scan18, scan30, scan47, scan63, scan77, scan99, scan103]
+### eval_scenes = [scan10, scan103, scan13, scan18, scan30, scan47, scan63, scan77]
+eval_scenes = [scan10, scan13, scan30, scan47, scan63]
+
+### TRAINING
+N_rand = 500
+lrate_feature = 0.001
+lrate_mlp = 0.0005
+lrate_decay_factor = 0.5
+lrate_decay_steps = 50000
+
+### TESTING
+chunk_size = 2000
+
+### RENDERING
+N_importance = 64
+N_samples = 64
+inv_uniform = True
+white_bkgd = False
+
+### CONSOLE AND TENSORBOARD
+i_img = 2000
+i_print = 100
+i_weights = 5000
