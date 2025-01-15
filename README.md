@@ -1,7 +1,5 @@
 # GARF-Advanced version
-including 4 options: 1) the version of the paper; 2) use optical flow-based feature extraction; 3) use ffc instead of resnet; 4) use attention to fuse the color atthe decoder
-
-env: ibr1
+including 4 options: 1) the version of the paper; 2) use optical flow-based feature extraction; 3) attempt to use FFC instead of the ResNet; 4) use attention to fuse the color at the decoder.
 
 train:
 
@@ -15,4 +13,4 @@ test:
 
 cd eval
 
-python eval.py --config ../configs/eval_llff.txt --ckpt_path /cluster/work/cvl/yueshi/experiments/IBR/IBRNet_ffc/model_020000.pth --use_ffc --num_source_views
+python eval.py --config ../configs/eval_llff.txt --ckpt_path ../experiments/IBR/IBRNet_ffc/model_020000.pth --use_ffc --num_source_views
