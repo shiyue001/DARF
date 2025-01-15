@@ -91,12 +91,12 @@ def sample_along_camera_ray(ray_o, ray_d, depth_range,
     # near_depth = near_depth_value * torch.ones_like(ray_d[..., 0])
 
     # far_depth = far_depth_value * torch.ones_like(ray_d[..., 0])
-    near_depth = depth_range[:, 0] - 0.05
+    near_depth = depth_range[:, 0] - 0.5
     # for i in near_depth:
     #     if i < 0:
     #         i = 0
     # print(near_depth)
-    far_depth = depth_range[:, 0] + 0.05
+    far_depth = depth_range[:, 0] + 0.5
     
     if inv_uniform:
         start = 1. / near_depth     # [N_rays,]
