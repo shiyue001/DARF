@@ -1,5 +1,5 @@
 # GARF-Advanced version
-including 4 options: 1) GADS in the paper; 2) use optical flow based feature extraction; 3) use ffc instead of resnet; 4) use attentio to fuse the color at decoder
+including 4 options: 1) the version of the paper; 2) use optical flow-based feature extraction; 3) use ffc instead of resnet; 4) use attention to fuse the color atthe decoder
 
 env: ibr1
 
