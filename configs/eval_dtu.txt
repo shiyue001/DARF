@@ -1,7 +1,7 @@
 ### INPUT
 expname = train_dtu5_norandom_5.1
-rootdir = /cluster/work/cvl/yueshi/  # REPLACE THIS with YOUR PATH.
-ckpt_path = /cluster/work/cvl/yueshi/code/IBRNet/out/dtu5_usedepth[300,400]_sample=64_importance=64_0.1_Nrand=2000_4.23/model_250000.pth  # REPLACE THIS with YOUR PATH.
+rootdir = /cluster/work/cv/yueshi/  # REPLACE THIS with YOUR PATH.
+ckpt_path = /cluster/work/cv/yueshi/code/IBRNet/out/dtu5_usedepth[300,400]_sample=64_importance=64_0.1_Nrand=2000_4.23/model_250000.pth  # REPLACE THIS with YOUR PATH.
 distributed = False
 testskip = 10
 
