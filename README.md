@@ -3,11 +3,8 @@ including 4 options: 1) the version of the paper; 2) use optical flow-based feat
 
 train:
 
-python train.py --config configs/pretrain.txt 
+python train.py --config configs/pretrain.txt (--use_ffc --use_attn) --num_source_views --expname
 
-python train.py --config configs/pretrain.txt --use_ffc --num_source_views --expname
-
-python train.py --config configs/pretrain.txt --use_attn --num_source_views --expname 
 
 test:
 
