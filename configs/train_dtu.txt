@@ -1,7 +1,7 @@
 # expname = dtu5_usedepth[300,400]_sample=64_64Nrand=2000_5.16
-# outdir = /cluster/project/cvl/yueshi/code/IBR_vsr/
+# outdir = /cluster/project/cv/yueshi/code/IBR_vsr/
 outdir = ./results/
-rootdir = /cluster/work/cvl/yueshi/  # REPLACE THIS with YOUR PATH.
+rootdir = /cluster/work/cv/yueshi/  # REPLACE THIS with YOUR PATH.
 render_stride = 2
 distributed = False
 
