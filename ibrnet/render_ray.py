@@ -84,7 +84,6 @@ def sample_along_camera_ray(ray_o, ray_d, depth_range,
     '''
     # will sample inside [near_depth, far_depth]
     # assume the nearest possible depth is at least (min_ratio * depth)
-    # 看看ray_o和ray_d的大小
     # near_depth_value = depth_range[0, 0]
     # far_depth_value = depth_range[0, 1]
     # assert near_depth_value > 0 and far_depth_value > 0 and far_depth_value > near_depth_value
