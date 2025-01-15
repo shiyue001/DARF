@@ -1,7 +1,7 @@
 ### INPUT
 expname = IBRNet_attention
 outdir = ./results/
-rootdir = /cluster/work/cvl/yueshi/  # REPLACE THIS with YOUR PATH.
+rootdir = /cluster/work/cv/yueshi/  # REPLACE THIS with YOUR PATH.
 render_stride = 2
 distributed = False
 
