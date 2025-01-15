@@ -1,6 +1,6 @@
 # GARF-Advanced version
 including 4 options: 
-1) the version of the paper;
+1) the version of the draft;
 New attempts:
 2) use optical flow-based feature extraction;
 3) attempt to use FFC instead of the ResNet;
